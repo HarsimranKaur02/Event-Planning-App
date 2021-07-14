@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageLogin.master.cs" Inherits="Masterpage_MasterPageLogin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link href="../Styles/Login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="top">
+                    <div class="left">
+                        <asp:Image ID="image" src="../Images/newlogo.png" runat="server" Height="95px" Width="190px" />
+                    </div>
+                    <div class="right">
+                        <asp:Button ID="loginbutton" runat="server" Text="Login" CssClass="button" Width="199px" Height="45px" PostBackUrl="../Login/LoginForm.aspx" />
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="signupbutton" runat="server" Text="Register" CssClass="registerbutton" Width="199px" Height="45px" PostBackUrl="../Login/Registration.aspx" OnClick="signupbutton_Click" />
+                    </div>
+                </div>
+                <br />
+                <br />
+
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <div class="menu">
+                    <ul class="ul">
+                        <li class="li"><a href="../Login/Homepage.aspx">Home</a></li>
+                        <li class="li"><a href="../Login/AboutUs.aspx">About Us</a></li>
+                        <li class="li"><a href="../Login/Services.aspx">Services</a></li>
+                        <li class="li"><a href="../Login/LoginForm.aspx">Booking</a></li>
+                        <li class="li"><a href="../Login/Feedback.aspx">Feedback</a></li>
+                        <li class="li"><a href="../Login/ContactUs.aspx">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            <div class="mid">
+            </div>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+            <div class="bottom">
+                <br />
+                <h3 class="bottom">2020 © Copyrights: Life Events</h3>
+                <br />
+            </div>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

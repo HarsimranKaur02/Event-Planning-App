@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Dashboard.master.cs" Inherits="Masterpage_Dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link href="../Styles/Afterlogin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="top">
+                    <div class="lft">
+                        <asp:Image ID="image" src="../Images/newlogo.png" runat="server" Height="90px" Width="190px" />
+                    </div>
+                    <div class="right">
+                        <asp:Button ID="logoubutton" runat="server" Text="Logout" Width="179px" Height="45px" PostBackUrl="../Login/HomePage.aspx" CssClass="cancelbutton" />
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                <br />
+                <br />
+        <br />
+        <br />
+        <br />
+        <br />
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <div class="left">
+                <ul class="menu">
+                    <li class="blank"></li>
+                    <li class="links">&nbsp;<a href="../Login/Booking.aspx"><i class=" fa fa-check-circle "></i>&nbsp;Book An Event</a></li>
+                    <li class="links">&nbsp;<a href="../Login/Cancellation.aspx"><i class="fa fa-trash"></i>&nbsp;Cancellation</a></li>
+                    <li class="links"><a href="../Login/Update.aspx"><i class="fa fa-pencil-square"></i>&nbsp;Update an event</a></li>
+                    <li class="links"><a href="../Login/View.aspx"><i class="fa fa-eye"></i>&nbsp;View Bookings</a></li>
+                    <li class="links"><a href="../Login/Profile.aspx"><i class="fa fa-male"></i>&nbsp; Profile</a></li>
+                </ul>
+            </div>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="Server">
+            <div class="bottom">
+                <br />
+                <h3 class="bottom1">2020 © Copyrights: Life Events</h3>
+                <br />
+            </div>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

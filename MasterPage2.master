@@ -1,0 +1,45 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage2.master.vb" Inherits="Masterpage_MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles/LoginRegister.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header" >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="top">
+                    <div class="left">
+                        <asp:Image ID="image" src="../Images/newlogo.png" runat="server" Height="95px" Width="190px" />
+                    </div>
+                    <div class="right">
+                        <ul class="ul">
+                         <li class="li"><a href="../Login/Homepage.aspx">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
+                      </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <div>
+                </div>
+                
+
+            </asp:ContentPlaceHolder>
+  
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            <div class="bottom">
+                <br />
+                <h3 class="bottom">2020 © Copyrights: Life Events</h3>
+                <br />
+            </div>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
